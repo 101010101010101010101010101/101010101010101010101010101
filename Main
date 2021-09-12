@@ -225,6 +225,7 @@ local function chat_handler(speaker,msg)
 			chat_handler(player,msg)
 		end)
 	elseif command and speaker == local_player then
+	    make_bots_chat(("%s has been unwhitelisted and can no longer use commands"):format(player.Name),player.Name)
 		if not player then return end
 		if player_message_connections[player.Name] then
 			player_message_connections[player.Name]:Disconnect()
@@ -235,4 +236,3 @@ end
 game.Players.LocalPlayer.Chatted:connect(function(message)
 chat_handler(local_player,message)
 end)
-
