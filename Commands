@@ -1,0 +1,13 @@
+!tp plr
+!orbit plr
+!forbit plr -- fling orbit, flings ppl around
+!follow plr
+!bodyguard plr
+!reset
+!wt plr
+!look plr
+!rj (joins the current server the main/runner account is in)
+!dupetools plr amount (not sure if this still works but it should)
+!droptools (drops all tools)
+!whilelist plr (allows other players to use these commands
+prefix any of these commands with un (like !unlook) to undo it 
