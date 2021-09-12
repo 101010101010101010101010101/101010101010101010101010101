@@ -133,7 +133,7 @@ local function get_player(shortcut)
 end
 
 local function make_bots_chat(message,player_name)
-		message =  "Wag Bot: "..message
+		message =  "Immortal Bot: "..message
 		local bots = get_ledger()
 		for i,bot_name in ipairs(get_ledger()) do
 				send_data_signal(bot_name,"chat",{message_data=message,player=player_name})
